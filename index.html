@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Big Furry Tractor | 80s & 90s Rock from Barrie, Ontario</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Big Furry Tractor – rock band from Barrie, Ontario playing the best of 80s and 90s hits. Shows, music, photos, and booking info."
+  />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Inter:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --bg: #05060a;
+      --bg-alt: #0d1117;
+      --accent: #ff4b4b;
+      --accent-soft: rgba(255, 75, 75, 0.12);
+      --text: #f5f5f5;
+      --muted: #a0a7b5;
+      --border: #262b36;
+      --card: #111624;
+      --radius: 16px;
+      --pill: 999px;
+      --shadow: 0 20px 45px rgba(0, 0, 0, 0.6);
+      --max-width: 1100px;
+      --transition: 0.2s ease;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+      background: radial-gradient(circle at top, #15182b 0, #05060a 45%, #000 100%);
+      color: var(--text);
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* NAVBAR */
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(14px);
+      background: linear-gradient(
+        to bottom,
+        rgba(4, 5, 15, 0.96),
+        rgba(4, 5, 15, 0.9),
+        transparent
+      );
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .nav-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0.6rem 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .nav-left {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+    }
+
+    .nav-logo {
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      background: radial-gradient(circle at 20% 0, #ff4b4b, #111624);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    /* Replace this with your actual logo image */
+    .nav-logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .nav-title {
+      font-family: "Oswald", system-ui, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-size: 0.95rem;
+    }
+
+    .nav-sub {
+      font-size: 0.7rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+    }
+
+    .nav-links a {
+      padding: 0.3rem 0.7rem;
+      border-radius: var(--pill);
+      border: 1px solid transparent;
+      color: var(--muted);
+      transition: var(--transition);
+      white-space: nowrap;
+    }
+
+    .nav-links a:hover {
+      border-color: rgba(255, 255, 255, 0.12);
+      color: #fff;
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    .nav-cta {
+      padding: 0.4rem 0.9rem;
+      border-radius: var(--pill);
+      background: var(--accent);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.22em;
+      font-weight: 600;
+      box-shadow: 0 12px 35px rgba(255, 75, 75, 0.55);
+      transition: var(--transition);
+    }
+
+    .nav-cta:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 18px 45px rgba(255, 75, 75, 0.7);
+    }
+
+    @media (max-width: 780px) {
+      .nav-inner {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+
+    /* LAYOUT */
+
+    section {
+      padding: 4rem 1.25rem;
+    }
+
+    .section-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+
+    .section-kicker {
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-bottom: 0.25rem;
+    }
+
+    .section-title {
+      font-family: "Oswald", system-ui, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: 1.7rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .section-subtitle {
+      font-size: 0.95rem;
+      color: var(--muted);
+      max-width: 520px;
+    }
+
+    /* HERO */
+
+    .hero {
+      padding-top: 4.5rem;
+      padding-bottom: 3.5rem;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+      gap: 2.5rem;
+      align-items: center;
+    }
+
+    @media (max-width: 880px) {
+      .hero-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    .hero-kicker {
+      text-transform: uppercase;
+      letter-spacing: 0.24em;
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-title {
+      font-family: "Oswald", system-ui, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.22em;
+      font-size: clamp(2.4rem, 5vw, 3.4rem);
+      margin-bottom: 0.4rem;
+    }
+
+    .hero-tagline {
+      font-size: 1.05rem;
+      color: #d7d9ea;
+      margin-bottom: 1.4rem;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.9rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .btn-primary,
+    .btn-outline {
+      border-radius: var(--pill);
+      padding: 0.75rem 1.6rem;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.22em;
+      font-weight: 600;
+      border: 1px solid transparent;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: var(--transition);
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+      box-shadow: 0 16px 40px rgba(255, 75, 75, 0.6);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 22px 52px rgba(255, 75, 75, 0.75);
+    }
+
+    .btn-outline {
+      border-color: rgba(255, 255, 255, 0.22);
+      color: var(--muted);
+      background: rgba(4, 6, 18, 0.9);
+    }
+
+    .btn-outline:hover {
+      color: #fff;
+      border-color: rgba(255, 255, 255, 0.4);
+      background: rgba(7, 10, 26, 0.9);
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.3rem;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--muted);
+    }
+
+    .hero-meta span {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .meta-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #1eff8f;
+      box-shadow: 0 0 14px rgba(30, 255, 143, 0.9);
+    }
+
+    .hero-card {
+      background: radial-gradient(circle at top left, #252a46, #05060c);
+      border-radius: 26px;
+      padding: 1.4rem;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card-bg {
+      position: absolute;
+      inset: -40%;
+      background:
+        radial-gradient(circle at 10% 10%, rgba(255, 75, 75, 0.4), transparent 60%),
+        radial-gradient(circle at 90% 80%, rgba(255, 255, 255, 0.2), transparent 60%);
+      opacity: 0.3;
+      pointer-events: none;
+    }
+
+    .hero-card-inner {
+      position: relative;
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+      gap: 1rem;
+      align-items: center;
+    }
+
+    @media (max-width: 600px) {
+      .hero-card-inner {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    .hero-card-text h3 {
+      font-family: "Oswald", system-ui, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: 0.95rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .hero-card-text p {
+      font-size: 0.85rem;
+      color: #d3d7ea;
+      margin-bottom: 0.6rem;
+    }
+
+    .hero-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+
+    .pill {
+      font-size: 0.7rem;
+      padding: 0.25rem 0.7rem;
+      border-radius: var(--pill);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--muted);
+      background: rgba(4, 5, 12, 0.84);
+    }
+
+    .hero-photo {
+      border-radius: 20px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      background: url("https://images.pexels.com/photos/164745/pexels-photo-164745.jpeg?auto=compress&cs=tinysrgb&w=800")
+        center/cover no-repeat;
+      aspect-ratio: 4 / 5;
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      justify-content: stretch;
+    }
+
+    .hero-photo-footer {
+      width: 100%;
+      padding: 0.6rem 0.8rem;
+      background: linear-gradient(to top, rgba(1, 1, 3, 0.98), transparent);
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      display: flex;
+      justify-content: space-between;
+      color: #d0d3e4;
+    }
+
+    /* MUSIC SECTION */
+
+    .music-grid {
+      margin-top: 2rem;
+      display: grid;
+      grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+      gap: 1.8rem;
+      align-items: flex-start;
+    }
+
+    @media (max-width: 900px) {
+      .music-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      padding: 1.25rem;
+      box-shadow: var(--shadow);
+    }
+
+    .card-title {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--muted);
+      margin-bottom: 0.4rem;
+    }
+
+    .player-placeholder {
+      margin-top: 0.7rem;
+      border-radius: 12px;
+      border: 1px solid #191f2a;
+      background: #05060a;
+      padding: 1rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .player-placeholder small {
+      display: block;
+      margin-top: 0.3rem;
+      font-size: 0.7rem;
+    }
+
+    .tracklist {
+      list-style: none;
+      margin-top: 0.7rem;
+    }
+
+    .track {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.45rem 0.2rem;
+      border-bottom: 1px dashed rgba(255, 255, 255, 0.08);
+      font-size: 0.88rem;
+    }
+
+    .track:last-child {
+      border-bottom: none;
+    }
+
+    .track-main {
+      display: flex;
+      flex-direction: column;
+      gap: 0.05rem;
+    }
+
+    .track-main span:first-child {
+      font-weight: 500;
+    }
+
+    .track-main span:last-child {
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+
+    .track-time {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    /* SHOWS */
+
+    .shows-table {
+      margin-top: 2rem;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      overflow: hidden;
+      background: var(--card);
+      box-shadow: var(--shadow);
+      font-size: 0.82rem;
+    }
+
+    .shows-header,
+    .show-row {
+      display: grid;
+      grid-template-columns: 0.9fr 1.7fr 1.2fr 0.9fr;
+      padding: 0.75rem 1rem;
+      align-items: center;
+    }
+
+    .shows-header {
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--muted);
+      background: rgba(255, 255, 255, 0.03);
+      font-weight: 600;
+    }
+
+    .show-row:nth-child(odd) {
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    .show-row:nth-child(even) {
+      background: rgba(0, 0, 0, 0.1);
+    }
+
+    .show-city {
+      font-weight: 500;
+    }
+
+    .show-cta {
+      justify-self: flex-start;
+      padding: 0.35rem 0.9rem;
+      border-radius: var(--pill);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: 0.7rem;
+      color: var(--muted);
+      transition: var(--transition);
+    }
+
+    .show-cta:hover {
+      border-color: var(--accent);
+      color: #fff;
+      background: var(--accent-soft);
+    }
+
+    @media (max-width: 780px) {
+      .shows-header {
+        display: none;
+      }
+      .show-row {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 0.1rem;
+      }
+      .show-row > div:last-child {
+        margin-top: 0.4rem;
+      }
+    }
+
+    /* ABOUT & MEDIA */
+
+    .about-grid {
+      margin-top: 2rem;
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+      gap: 1.8rem;
+      align-items: flex-start;
+    }
+
+    @media (max-width: 900px) {
+      .about-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    .about-text p {
+      font-size: 0.95rem;
+      color: #d4d7e4;
+      margin-bottom: 0.8rem;
+    }
+
+    .about-list {
+      list-style: none;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .about-list li::before {
+      content: "• ";
+      color: var(--accent);
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.6rem;
+    }
+
+    .gallery-item {
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      background: #05060a;
+      aspect-ratio: 4 / 3;
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* CONTACT */
+
+    .contact-card {
+      margin-top: 2rem;
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+      gap: 1.8rem;
+      align-items: stretch;
+    }
+
+    @media (max-width: 880px) {
+      .contact-card {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    .contact-panel {
+      background: var(--card);
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      padding: 1.4rem 1.3rem;
+      box-shadow: var(--shadow);
+      font-size: 0.95rem;
+    }
+
+    .contact-panel h3 {
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      margin-bottom: 0.4rem;
+    }
+
+    .contact-panel p {
+      color: var(--muted);
+      margin-bottom: 0.9rem;
+    }
+
+    .contact-detail {
+      margin-bottom: 0.4rem;
+      font-size: 0.9rem;
+    }
+
+    .contact-detail span {
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-size: 0.75rem;
+      color: var(--muted);
+      display: block;
+    }
+
+    .contact-socials {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.6rem;
+    }
+
+    .social-pill {
+      padding: 0.35rem 0.85rem;
+      border-radius: var(--pill);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--muted);
+      transition: var(--transition);
+    }
+
+    .social-pill:hover {
+      border-color: var(--accent);
+      color: #fff;
+      background: var(--accent-soft);
+    }
+
+    /* FOOTER */
+
+    footer {
+      padding: 1.5rem 1.25rem 2rem;
+      font-size: 0.78rem;
+      color: var(--muted);
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      margin-top: 1rem;
+    }
+
+    .footer-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <div class="nav-left">
+        <div class="nav-logo">
+          <!-- Replace this with your actual logo file -->
+          <!-- Example: <img src="images/big-furry-tractor-logo.png" alt="Big Furry Tractor logo"> -->
+          BFT
+        </div>
+        <div>
+          <div class="nav-title">Big Furry Tractor</div>
+          <div class="nav-sub">Barrie • 80s &amp; 90s Rock</div>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="#music">Music</a>
+        <a href="#shows">Shows</a>
+        <a href="#about">Band</a>
+        <a href="#media">Photos</a>
+        <a href="#contact" class="nav-cta">Book the band</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="section-inner hero-grid">
+        <div>
+          <div class="hero-kicker">Live loud or stay home</div>
+          <h1 class="hero-title">Big Furry Tractor</h1>
+          <p class="hero-tagline">
+            A rock band from Barrie, Ontario bringing back the biggest
+            <strong>80s &amp; 90s hits</strong> — the songs you forgot you loved and the ones you
+            scream along to anyway.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#music" class="btn-primary">▶&nbsp; Listen now</a>
+            <a href="#contact" class="btn-outline">Book a show</a>
+          </div>
+
+          <div class="hero-meta">
+            <span><span class="meta-dot"></span>Available for bars &amp; events</span>
+            <span>Full night of 80s/90s rock</span>
+            <span>Based in Barrie, ON</span>
+          </div>
+        </div>
+
+        <aside class="hero-card">
+          <div class="hero-card-bg"></div>
+          <div class="hero-card-inner">
+            <div class="hero-card-text">
+              <h3>Setlist vibes</h3>
+              <p>
+                Think grunge, hair metal, alternative, and guilty-pleasure pop-rock — all in
+                one night. High-energy, zero ballads (unless you ask nicely).
+              </p>
+              <div class="hero-pills">
+                <span class="pill">80s rock anthems</span>
+                <span class="pill">90s nostalgia</span>
+                <span class="pill">Crowd sing-alongs</span>
+              </div>
+            </div>
+            <div class="hero-photo">
+              <div class="hero-photo-footer">
+                <span>Live • Barrie</span>
+                <span>Big Furry Tractor</span>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- MUSIC -->
+    <section id="music">
+      <div class="section-inner">
+        <div class="section-kicker">Music</div>
+        <h2 class="section-title">What we sound like</h2>
+        <p class="section-subtitle">
+          Plug in your ears before we plug in the amps. Here’s a quick taste and a sample
+          setlist — swap this out with your own tracks or live recordings.
+        </p>
+
+        <div class="music-grid">
+          <div class="card">
+            <div class="card-title">Featured demo</div>
+
+            <!-- Replace this block with a real Spotify, YouTube or SoundCloud embed -->
+            <div class="player-placeholder">
+              Embed your music player here<br />
+              (YouTube / Spotify / SoundCloud)
+              <small>Paste the official embed code once your tracks are online.</small>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">Sample setlist</div>
+            <ul class="tracklist">
+              <li class="track">
+                <div class="track-main">
+                  <span>Smells Like Teen Spirit</span>
+                  <span>Nirvana • 90s Grunge</span>
+                </div>
+                <div class="track-time">4:39</div>
+              </li>
+              <li class="track">
+                <div class="track-main">
+                  <span>Livin' on a Prayer</span>
+                  <span>Bon Jovi • 80s Rock</span>
+                </div>
+                <div class="track-time">4:11</div>
+              </li>
+              <li class="track">
+                <div class="track-main">
+                  <span>Wonderwall</span>
+                  <span>Oasis • 90s Anthem</span>
+                </div>
+                <div class="track-time">4:18</div>
+              </li>
+              <li class="track">
+                <div class="track-main">
+                  <span>Enter Sandman</span>
+                  <span>Metallica • 90s Metal</span>
+                </div>
+                <div class="track-time">5:30</div>
+              </li>
+              <li class="track">
+                <div class="track-main">
+                  <span>+ Custom requests</span>
+                  <span>We tailor the night to your crowd.</span>
+                </div>
+                <div class="track-time">∞</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHOWS -->
+    <section id="shows">
+      <div class="section-inner">
+        <div class="section-kicker">Shows</div>
+        <h2 class="section-title">Upcoming gigs</h2>
+        <p class="section-subtitle">
+          Drop us a line to lock in your bar night, private party, or event. Here’s an
+          example of how your shows will look — just update the dates and venues.
+        </p>
+
+        <div class="shows-table">
+          <div class="shows-header">
+            <div>Date</div>
+            <div>Venue</div>
+            <div>City</div>
+            <div></div>
+          </div>
+
+          <div class="show-row">
+            <div>Dec 14</div>
+            <div>The Queens</div>
+            <div class="show-city">Barrie, ON</div>
+            <div><a href="#contact" class="show-cta">Get on the list</a></div>
+          </div>
+
+          <div class="show-row">
+            <div>Jan 11</div>
+            <div>Local Rock Bar</div>
+            <div class="show-city">Orillia, ON</div>
+            <div><a href="#contact" class="show-cta">Booking info</a></div>
+          </div>
+
+          <div class="show-row">
+            <div>Feb 1</div>
+            <div>Private Event</div>
+            <div class="show-city">Simcoe County</div>
+            <div><a href="#contact" class="show-cta">Book your date</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT / MEDIA -->
+    <section id="about">
+      <div class="section-inner">
+        <div class="section-kicker">Band</div>
+        <h2 class="section-title">Big Furry Tractor in a nutshell</h2>
+        <p class="section-subtitle">
+          Barrie-based, volume up, nostalgia maxed. Here’s what you’re getting when you
+          hit “book”.
+        </p>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              Big Furry Tractor is a rock band from Barrie, Ontario that lives in the
+              sweet spot between <strong>80s arena rock</strong> and
+              <strong>90s alternative</strong>. We play the songs people forgot they knew
+              every word to — plus the ones they’d riot if they didn’t hear.
+            </p>
+            <p>
+              Whether it’s a packed bar, a birthday blowout, or a staff party that needs a
+              serious jolt of life, we bring a full-throttle live show, tight harmonies,
+              and a setlist tuned to your crowd.
+            </p>
+            <ul class="about-list">
+              <li>2–3 full sets of 80s &amp; 90s hits</li>
+              <li>Professional gear + sound</li>
+              <li>Flexible set lengths &amp; start times</li>
+              <li>Willing to learn a “must-play” song for your night</li>
+            </ul>
+          </div>
+
+          <section id="media">
+            <div class="card">
+              <div class="card-title">Photos</div>
+              <div class="gallery-grid">
+                <!-- Replace background-image URLs with your own photos -->
+                <div
+                  class="gallery-item"
+                  style="background-image:url('https://images.pexels.com/photos/2102568/pexels-photo-2102568.jpeg?auto=compress&cs=tinysrgb&w=800');"
+                ></div>
+                <div
+                  class="gallery-item"
+                  style="background-image:url('https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=800');"
+                ></div>
+                <div
+                  class="gallery-item"
+                  style="background-image:url('https://images.pexels.com/photos/144428/pexels-photo-144428.jpeg?auto=compress&cs=tinysrgb&w=800');"
+                ></div>
+                <div
+                  class="gallery-item"
+                  style="background-image:url('https://images.pexels.com/photos/164745/pexels-photo-164745.jpeg?auto=compress&cs=tinysrgb&w=800');"
+                ></div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="section-inner">
+        <div class="section-kicker">Booking</div>
+        <h2 class="section-title">Book Big Furry Tractor</h2>
+        <p class="section-subtitle">
+          Tell us about your bar, event, or party and we’ll get back to you with dates,
+          pricing, and details. Update the contact info below with your real details.
+        </p>
+
+        <div class="contact-card">
+          <div class="contact-panel">
+            <h3>Booking &amp; inquiries</h3>
+            <p>
+              For bookings in Barrie, Simcoe County, and beyond, reach out with your date,
+              venue size, and what kind of night you’re planning.
+            </p>
+
+            <div class="contact-detail">
+              <span>Email</span>
+              <!-- Replace with your real band email -->
+              <a href="mailto:booking@bigfurrytractor.com">booking@bigfurrytractor.com</a>
+            </div>
+
+            <div class="contact-detail">
+              <span>Instagram</span>
+              <!-- Replace with your real handle -->
+              <a href="https://instagram.com/bigfurrytractor" target="_blank"
+                >@bigfurrytractor</a
+              >
+            </div>
+
+            <div class="contact-detail">
+              <span>Facebook</span>
+              <a href="https://facebook.com/bigfurrytractor" target="_blank"
+                >facebook.com/bigfurrytractor</a
+              >
+            </div>
+
+            <div class="contact-detail">
+              <span>Location</span>
+              Barrie, Ontario • Available across Simcoe County
+            </div>
+          </div>
+
+          <div class="contact-panel">
+            <h3>Quick inquiry</h3>
+            <p>
+              You can also embed a simple form here (from your website host, Google Forms,
+              etc.). For now, this is just example text.
+            </p>
+            <p style="font-size:0.86rem;color:var(--muted);">
+              • Date of event<br />
+              • Venue name &amp; city<br />
+              • Expected crowd size<br />
+              • Type of event (bar night / private party / corporate / other)
+            </p>
+            <p style="margin-top:0.9rem;font-size:0.85rem;">
+              Send those details to
+              <a href="mailto:booking@bigfurrytractor.com">booking@bigfurrytractor.com</a>
+              and we’ll get back to you.
+            </p>
+
+            <div class="contact-socials">
+              <a class="social-pill" href="#music">▶ Listen</a>
+              <a class="social-pill" href="#shows">📅 Shows</a>
+              <a class="social-pill" href="#top">↑ Back to top</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>© <span id="year"></span> Big Furry Tractor • Barrie, Ontario</div>
+      <div>80s &amp; 90s rock • Turn it up.</div>
+    </div>
+  </footer>
+
+  <script>
+    // Sets the current year automatically
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
